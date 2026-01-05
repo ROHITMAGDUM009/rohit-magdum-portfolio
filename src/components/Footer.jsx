@@ -9,7 +9,7 @@ const Footer = () => {
         </p>
 
         <h2 className="text-3xl md:text-4xl font-bold text-black">
-          maxwell.marra@gmail.com
+          rohitmagdum2@gmail.com
         </h2>
 
         <button className="mt-6 px-6 py-3 bg-gray-800 text-white rounded-full text-sm font-medium hover:bg-black transition">
