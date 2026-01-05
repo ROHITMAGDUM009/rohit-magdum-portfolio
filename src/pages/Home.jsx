@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 /**
  * Home Page
@@ -12,12 +13,7 @@ const Home = () => {
           <Navbar />
           <Hero />
           <Projects />
-      {/* Future sections:
-          - About
-          - Experience
-          - 
-          - Contact
-      */}
+          <Footer/>
     </main>
   );
 };
