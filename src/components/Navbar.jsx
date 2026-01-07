@@ -1,4 +1,4 @@
-import logo from '../assets/9logo.svg';
+import logo from '../assets/R_logo.png';
 
 const Navbar = () => {
   return (
