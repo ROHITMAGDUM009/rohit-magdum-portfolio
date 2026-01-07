@@ -46,16 +46,31 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </nav>
 
             {/* Theme Toggle Button */}
-            <button
+                      <button
               onClick={() => setDarkMode(!darkMode)}
               className="w-10 h-10 flex items-center justify-center rounded-full
-                         bg-gray-200 dark:bg-gray-800
-                         text-black dark:text-white
-                         hover:scale-110 transition"
+                        bg-gray-200 dark:bg-gray-800
+                        text-black dark:text-white
+                        hover:scale-110 transition"
               aria-label="Toggle Theme"
             >
-              {darkMode ? "☀️" : "🌙"}
+              {darkMode ? (
+                // Sun icon
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M12 3v1m0 16v1m8.66-10h-1M4.34 12h-1m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                </svg>
+              ) : (
+                // Moon icon
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                    d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+              )}
             </button>
+
 
           </div>
         </div>
