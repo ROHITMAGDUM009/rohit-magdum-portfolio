@@ -3,17 +3,17 @@ import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
-/**
- * Home Page
- * Contains all sections related to the landing page
- */
-const Home = () => {
+const Home = ({ darkMode, setDarkMode }) => {
   return (
-    <main className="bg-gray-100 min-h-screen">
-          <Navbar />
-          <Hero />
-          <Projects />
-          <Footer/>
+    <main
+      className="min-h-screen transition-colors duration-300
+                 bg-gray-100 text-black
+                 dark:bg-[#0e0e0e] dark:text-white"
+    >
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Hero />
+      <Projects />
+      <Footer />
     </main>
   );
 };
